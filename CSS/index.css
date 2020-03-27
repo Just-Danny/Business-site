@@ -1,0 +1,153 @@
+.grid-container{
+background-color: lightblue;
+display: grid;
+grid-gap: 10px;
+grid-template-columns: 25%, 25% 25% 25%; 
+grid-template-rows: 25% 25% 35% 15%;
+overflow: auto;
+margin-top: 20px;
+margin: 40px;
+}
+
+body{
+   background-color: beige;
+}
+
+/*#r{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
+
+#g{
+    width: 10px;
+    height: 10px;
+    background-color: green;
+}
+
+#b{
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+}
+*/
+
+/*.wrap{
+    grid-row: 1/4;
+    grid-column: 1/4;
+    background-color: beige;
+    
+}
+*/
+.box{
+    position: relative;
+    
+    vertical-align: middle;
+}
+
+.comp{
+    grid-row: 1/1;
+    grid-column: 1/4;
+    height: 40px;
+    font-size: 20px;
+}
+.main{
+grid-row: 3/3;
+grid-column: 2/3;
+background-color: beige;
+}
+
+.main p{
+    text-align: center;
+}
+
+.main h1{
+    text-align: center;
+}
+
+.main h3{
+    padding-left: 15em;
+}
+
+.footer{
+    grid-row: 4/4;
+    grid-column: 1/4;
+    background-color: gray;
+    text-align: right;
+}
+
+.nav{
+    grid-row: 2/2;
+    grid-column: 1/4;
+    background-color: gold;
+    height: 50px;
+    text-align: center;
+    padding-left: 25em;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+  ul {
+    background:black;
+      list-style: none;
+      margin: 0;
+  }
+  
+  li {
+      color: #fff;
+    background: goldenrod;
+      display: block;
+      float: left;
+      padding: 1rem;
+      position: relative;
+      text-decoration: none;
+    transition-duration: 0.5s;
+  }
+    
+  li a {
+    color: #fff;
+  }
+  
+  li:hover,
+  li:focus-within {
+      background:blue;
+      cursor: pointer;
+      box-shadow:inset white 10px 10px 35px;
+      color:greenyellow;
+  }
+  
+  li:focus-within a {
+    outline: none;
+    color:greenyellow;
+  }
+  
+  ul li ul {
+    position:absolute;
+      background:blue;
+      visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+      left:0;
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+  
+  ul li ul li {
+      clear: both;
+    width:100%;
+    visibility:visible;
+    padding:auto;
+    left: -30%;
+  }
