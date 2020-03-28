@@ -23,7 +23,7 @@ body{
     border: blue 5px solid;
 }
 
-/*company name*/
+/*company name (top box)*/
 .comp{
     grid-row: 1/1;
     grid-column: 1/4;
@@ -32,6 +32,8 @@ body{
     background-color: lightgreen;
 
 }
+
+/*Middle box*/
 .main{
 grid-row: 3/3;
 grid-column: 1/4;
@@ -40,7 +42,9 @@ height: 14em;
 }
 
 .main p{
-    text-align: center;
+    text-align: justify;
+    margin-left: 13em;
+    margin-right: 13em;
 }
 
 .main h1{
@@ -48,9 +52,45 @@ height: 14em;
 }
 
 .main h3{
-    padding-left: 15em;
+    padding-left: 10em;
 }
 
+/* The main block's list*/
+.main ul {
+  background:black;
+    list-style: none;
+    margin: 0;
+}
+
+.main li {
+    color: #fff;
+  background: rgb(55, 190, 55);
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+.main li a {
+  color: #fff;
+}
+
+.main li:hover,
+li:focus-within {
+    background:pink;
+    cursor: pointer;
+    box-shadow:inset lightblue 10px 10px 35px;
+    color:white ;
+}
+
+.main li:focus-within a {
+  outline: none;
+  color:greenyellow;
+}
+
+/*footer*/
 .footer{
     margin: 0em;
     /*top: 6em;*/
@@ -71,9 +111,10 @@ height: 14em;
     background-color: gold;
     height: 40px;
     text-align: center;
-    padding-left: 13em;
+    padding-left: 17em;
 }
 
+/* Everything below is for the nav bar*/
 a {
     text-decoration: none;
   }
